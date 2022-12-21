@@ -204,6 +204,7 @@ img {
 .header {
   width: 1200px;
   padding: 0 16px;
+  margin: auto;
   background-color: #84a178;
 }
 
@@ -226,16 +227,70 @@ img {
   gap: 28px;
 }
 
+@media (max-width: 1199px) {
+  .nav {
+    display: none;
+  }
+}
+.nav__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fcfcfc;
+}
+
 .hero {
+  position: relative;
   width: 1200px;
+  height: 591px;
+  margin: auto;
   padding: 0 16px;
   background-color: #84a178;
+  background-image: url(../../images/Icecream_header/point_desctop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+
+.hero__title {
+  width: 367px;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.2631578947;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.hero-button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 42px;
+}
+
+.button-hero1 {
+  margin-right: 12px;
 }
 
 .button-header,
 .button-hero {
   height: 42px;
   padding: 0 34px;
+}
+
+.hero-button-block {
+  display: block;
+  gap: 12px;
 }
 
 .lot-block {
@@ -248,9 +303,63 @@ img {
 }
 
 .description {
-  width: 200px;
+  position: relative;
+  width: 440px;
   height: 120px;
-  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  color: #fcfcfc;
+  padding-top: 118px;
+  padding-left: 240px;
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 16px;
+  bottom: -104px;
+}
+
+.hero-progress {
+  position: absolute;
+  top: 53px;
+  right: 16px;
+}
+
+.progress-item:nth-child(2n+1) {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 56px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.progress-item:nth-child(2n) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: right;
+  color: #fcfcfc;
+}
+
+.icecream {
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+}
+
+.lot_icecream {
+  position: absolute;
+  left: 16px;
+  bottom: 65px;
 }
 
 .social {

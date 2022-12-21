@@ -36,7 +36,6 @@
           <ul class="nav list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current link">Home</a>
-              <!-- <div class="overlay-nav"></div> -->
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link link">How it's made?</a>
@@ -65,7 +64,7 @@
             +38 096 111 11 11</a
           >
         </div> -->
-        <!-- бурер меню -->
+        <!-- бургер меню -->
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40">
             <use href="./images/icon.svg#menu_40px"></use>
@@ -78,34 +77,33 @@
       <!-- Секція банер з кнопкою замовлення -->
       <section class="hero">
         <div class="hero__overlay">
-          <div class="hero__container">
-            <h1 class="hero__title">ice cream made with passion</h1>
-            <button type="button" class="button-hero button--baner-size" data-modal-open>
-              Products
-            </button>
-            <button type="button" class="button-hero button--baner-size" data-modal-open>
-              How it’s made?
-            </button>
+          <h1 class="hero__title">ice cream made with passion</h1>
+          <div class="hero-button-block">
+            <button type="button" class="button-hero button-hero1" data-modal-open>Products</button>
+            <button type="button" class="button-hero" data-modal-open>How it’s made?</button>
           </div>
           <div class="lot-block">
-            <img src="./images/Icecream_header/lot_icecream_desktop.png" alt="" />
-            <span class="description">
+            <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et <br />
-              <br />
-              ---------->
-            </span>
+              incididunt ut labore et
+              <img class="arrow" src="./images/Icecream_header/arrow.png" alt="" />
+            </p>
           </div>
           <div>
-            <ul>
-              <li>16</li>
-              <li>cafes</li>
-              <li>23</li>
-              <li>food trucks</li>
+            <ul class="hero-progress list">
+              <li class="progress-item">16</li>
+              <li class="progress-item">cafes</li>
+              <li class="progress-item">23</li>
+              <li class="progress-item">food trucks</li>
             </ul>
           </div>
-          <img src="./images/Icecream_header/point_desctop.png" alt="" />
-          <img src="./images/Icecream_header/icecream_desktop.png" alt="" />
+          <!-- <img src="./images/Icecream_header/point_desctop.png" alt="" /> -->
+          <img class="icecream" src="./images/Icecream_header/icecream_desktop.png" alt="" />
+          <img
+            class="lot_icecream"
+            src="./images/Icecream_header/lot_icecream_desktop.png"
+            alt=""
+          />
         </div>
       </section>
       <!-- Пріорітети команди -->
