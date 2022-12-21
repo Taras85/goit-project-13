@@ -1,0 +1,52 @@
+.adds {
+  font-style: normal;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
+
+  &__direction {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--background-body-color-font-baner);
+
+    transition: color var(--scheme-effect);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  &__contact {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--scheme-effect);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1199px) {
+      align-items: center;
+    }
+
+    // &:not(:last-child) {
+    //   margin-bottom: 12px;
+    // }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+.grid-set-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent-main);
+}
+.grid-set-item{
+    flex-basis: calc((100% - (var(--indent-main) * ((var(--items)) - 1))) / var(--items));
+
+}

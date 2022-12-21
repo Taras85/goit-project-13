@@ -1,0 +1,36 @@
+.directions {
+  @extend %section;
+  padding-top: 0px;
+  --items: 3;
+  @media screen and (max-width: 1199px) {
+    // display: contents;
+    display: none;
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    backdrop-filter: (2px);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-body-color-font-baner);
+  }
+}
