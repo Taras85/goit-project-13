@@ -29,25 +29,29 @@
       <div class="header__container">
         <!-- Логотип -->
         <a class="logo link" href="./index.html"
-          >Web<span class="logo__part logo__part--color-black">Studio</span></a
-        >
+          ><img src="./images/Icecream_header/Logo.png" width="60" height="65" alt="" />
+        </a>
         <!-- Навігація сайту -->
         <nav>
           <ul class="nav list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current link">Студія</a>
+              <a href="./index.html" class="nav__link nav__link--current link">Home</a>
               <!-- <div class="overlay-nav"></div> -->
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link link">How it's made?</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link link">Контакти</a>
+              <a href="#contact" class="nav__link link">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link link">Contact</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="button-header" data-modal-open>Buy now ></button>
         <!-- Контакти в хедері -->
-        <div class="header-contacts">
+        <!-- <div class="header-contacts">
           <a href="mailto:info@devstudio.com" class="header-contacts__link link">
             <svg class="header-contacts__icon" width="16" height="12">
               <use href="./images/icon.svg#mail"></use>
@@ -60,7 +64,7 @@
             </svg>
             +38 096 111 11 11</a
           >
-        </div>
+        </div> -->
         <!-- бурер меню -->
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40">
@@ -72,18 +76,40 @@
     <!-- Головний блок сайту -->
     <main>
       <!-- Секція банер з кнопкою замовлення -->
-      <section class="baner">
-        <div class="baner__overlay">
-          <div class="baner__container">
-            <h1 class="baner__title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button button--baner-size" data-modal-open>
-              Замовити послугу
+      <section class="hero">
+        <div class="hero__overlay">
+          <div class="hero__container">
+            <h1 class="hero__title">ice cream made with passion</h1>
+            <button type="button" class="button-hero button--baner-size" data-modal-open>
+              Products
+            </button>
+            <button type="button" class="button-hero button--baner-size" data-modal-open>
+              How it’s made?
             </button>
           </div>
+          <div class="lot-block">
+            <img src="./images/Icecream_header/lot_icecream_desktop.png" alt="" />
+            <span class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et <br />
+              <br />
+              ---------->
+            </span>
+          </div>
+          <div>
+            <ul>
+              <li>16</li>
+              <li>cafes</li>
+              <li>23</li>
+              <li>food trucks</li>
+            </ul>
+          </div>
+          <img src="./images/Icecream_header/point_desctop.png" alt="" />
+          <img src="./images/Icecream_header/icecream_desktop.png" alt="" />
         </div>
       </section>
       <!-- Пріорітети команди -->
-      <section class="priorities">
+      <!-- <section class="priorities">
         <div class="priorities__container">
           <h2 class="title visually-hidden">Пріорітети команди</h2>
           <ul class="list grid-set-list">
@@ -133,9 +159,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Напрямки команди -->
-      <section class="directions">
+      <!-- <section class="directions">
         <div class="directions__container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list grid-set-list">
@@ -180,9 +206,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Команда -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="team__container">
           <h2 class="title">Наша команда</h2>
           <ul class="team__list grid-set-list list">
@@ -600,9 +626,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постійні клієнти -->
-      <section class="partner">
+      <!-- <section class="partner">
         <div class="partner__block">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="partner__list list grid-set-list">
@@ -650,18 +676,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Підвал сайту -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__block" id="contact">
-        <div class="footer__contact">
-          <!-- Логотип -->
-          <a href="./index.html" class="logo link"
+        <div class="footer__contact"> -->
+    <!-- Логотип -->
+    <!-- <a href="./index.html" class="logo link"
             >Web<span class="logo__part--color-white">Studio</span></a
-          >
-          <!-- Контактна інформація -->
-          <address class="adds">
+          > -->
+    <!-- Контактна інформація -->
+    <!-- <address class="adds">
             <ul class="adds__list list">
               <li class="adds__item">
                 <a href="https://goo.gl/maps/VrcMHXhKriwRzs2d6" class="adds__direction link"
@@ -678,9 +704,9 @@
               </li>
             </ul>
           </address>
-        </div>
-        <!-- Секція соц мережі -->
-        <div class="footer__social">
+        </div> -->
+    <!-- Секція соц мережі -->
+    <!-- <div class="footer__social">
           <h2 class="footer__title footer-title--flex">Приєднуйтесь</h2>
           <ul class="social list">
             <li class="social__item">
@@ -736,9 +762,9 @@
               </a>
             </li>
           </ul>
-        </div>
-        <!-- Секція підписки -->
-        <div>
+        </div> -->
+    <!-- Секція підписки -->
+    <!-- <div>
           <form class="subscription" name="mailing_form">
             <div>
               <label for="user_mail" class="footer__title footer-title--flex"
@@ -763,7 +789,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>

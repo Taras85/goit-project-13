@@ -1,102 +1,101 @@
-.baner {
-  background-color: var(--banner-footer-background-color);
+// .baner {
+//   background-color: var(--banner-footer-background-color);
 
-  &__container {
-    @extend %container;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+//   &__container {
+//     @extend %container;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-  &__overlay {
-    @extend %section;
-      padding-top: 118px;
-      padding-bottom: 118px;
-      min-height: 400px;
-          
-    margin-left: auto;
-    margin-right: auto;
-    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   url('../images/baner1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-clip: padding-box;
+//   &__overlay {
+//     @extend %section;
+//       padding-top: 118px;
+//       padding-bottom: 118px;
+//       min-height: 400px;
 
-    // Mobile screen
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/baner1/img_s@1x.jpg);
+//     margin-left: auto;
+//     margin-right: auto;
+//     // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     //   url('../images/baner1.jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     background-clip: padding-box;
 
-    // retina mobile screen
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/baner1/img_s@2x.jpg);
-    }
+//     // Mobile screen
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/baner1/img_s@1x.jpg);
 
-    // Tablet screen
-    @media screen and (min-width: 481px) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/baner1/img_m@1x.jpg);
+//     // retina mobile screen
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/baner1/img_s@2x.jpg);
+//     }
 
-      // retina tablet screen
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/baner1/img_m@2x.jpg);
-      }
-    }
+//     // Tablet screen
+//     @media screen and (min-width: 481px) {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/baner1/img_m@1x.jpg);
 
-    // Desktop screen
-    @media screen and (min-width: 769px) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/baner1/img_l@1x.jpg);
+//       // retina tablet screen
+//       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//           url(../images/baner1/img_m@2x.jpg);
+//       }
+//     }
 
-      // retina desktop screen
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/baner1/img_l@2x.jpg);
-      }
-    }
+//     // Desktop screen
+//     @media screen and (min-width: 769px) {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/baner1/img_l@1x.jpg);
 
-    @media screen and (max-width: 767px) {
+//       // retina desktop screen
+//       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//           url(../images/baner1/img_l@2x.jpg);
+//       }
+//     }
 
-      // min-height: 400px;
-      max-width: 640px;
-    }
+//     @media screen and (max-width: 767px) {
 
-    @media screen and (min-width: 768px) {
- 
-    
-      max-width: 1024px;
-    }
-    @media screen and (min-width: 1200px) {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      min-height: 600px;
-      max-width: 1600px;
-    }
-  }
+//       // min-height: 400px;
+//       max-width: 640px;
+//     }
 
-  &__title {
-    text-align: center;
+//     @media screen and (min-width: 768px) {
 
-    color: var(--background-body-color-font-baner);
-    margin-bottom: 30px;
+//       max-width: 1024px;
+//     }
+//     @media screen and (min-width: 1200px) {
+//       padding-top: 200px;
+//       padding-bottom: 200px;
+//       min-height: 600px;
+//       max-width: 1600px;
+//     }
+//   }
 
-    @media screen and (max-width: 1199px) {
-      max-width: 360px;
-      font-size: 26px;
-      line-height: calc(42 / 26);
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
+//   &__title {
+//     text-align: center;
 
-    @media screen and (min-width: 1200px) {
-      max-width: 696px;
-      font-size: 44px;
-      line-height: calc(60 / 44);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-  }
-}
+//     color: var(--background-body-color-font-baner);
+//     margin-bottom: 30px;
+
+//     @media screen and (max-width: 1199px) {
+//       max-width: 360px;
+//       font-size: 26px;
+//       line-height: calc(42 / 26);
+//       text-align: center;
+//       letter-spacing: 0.06em;
+//       text-transform: uppercase;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       max-width: 696px;
+//       font-size: 44px;
+//       line-height: calc(60 / 44);
+//       letter-spacing: 0.06em;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
